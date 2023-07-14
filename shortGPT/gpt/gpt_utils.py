@@ -84,7 +84,7 @@ def gpt3Turbo_completion(chat_prompt="", system="You are an AI that can give the
                     {"role": "user", "content": chat_prompt}
                 ]
             response = openai.ChatCompletion.create(
-                engine="gpt4",
+                engine="test",
                 model=model,
                 messages=messages,
                 max_tokens=1000,
